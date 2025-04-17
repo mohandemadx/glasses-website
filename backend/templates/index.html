@@ -1,0 +1,22 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Virtual Glasses Try-On</title>
+</head>
+<body style="text-align: center; background: #222; color: white;">
+    <h1>Virtual Glasses Try-On</h1>
+    <img src="{{ url_for('video_feed') }}" width="640" height="480" style="border: 5px solid #fff;"><br><br>
+
+    <form method="POST" action="/change" style="display: inline;">
+        <input type="hidden" name="direction" value="prev">
+        <button type="submit">← Previous</button>
+    </form>
+
+    <form method="POST" action="/change" style="display: inline;">
+        <input type="hidden" name="direction" value="next">
+        <button type="submit">Next →</button>
+    </form>
+</body>
+</html>

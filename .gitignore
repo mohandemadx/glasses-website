@@ -1,0 +1,12 @@
+# Node modules
+/frontend/node_modules/
+
+# Python virtual environments
+/backend/myenv/
+/backend/__pycache__/
+
+# Sensitive Files
+.env
+
+# System files
+.DS_Store
